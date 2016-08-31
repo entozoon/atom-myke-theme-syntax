@@ -10,5 +10,5 @@ Dark Atom syntax colour scheme made, and used, by myself.
 
 * In Atom, open *Settings* (*Preferences* on Mac)
 * Go to *Install* section
-* Search for `myke-theme-syntax` package. Once found, click `Install` button.
+* Search for `myke-theme-syntax` and click `Themes`. Once found, click `Install` button.
 * Done!
