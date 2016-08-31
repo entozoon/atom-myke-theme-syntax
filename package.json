@@ -1,8 +1,8 @@
 {
   "name": "myke-theme-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "version": "0.1.0",
+  "description": "Dark Atom syntax colour scheme made, and used, by myself",
   "keywords": [
     "syntax",
     "theme"
