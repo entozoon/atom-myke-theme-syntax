@@ -69,12 +69,8 @@ atom-text-editor .search-results .marker.current-result .region,
 .keyword {
   color: @keyword;
 
-  &.control {
-	color: @purple;
-  }
-
   &.operator {
-	color: @syntax-text-color;
+	color: @keyword-operator;
   }
 
   &.other.special-method {
@@ -87,7 +83,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .storage {
-  color: @purple;
+  color: @storage;
 }
 
 .constant {
@@ -136,7 +132,7 @@ atom-text-editor .search-results .marker.current-result .region,
 .punctuation {
   &.definition {
 	&.comment {
-	  color: @light-gray;
+	  color: @comment;
 	}
 /*
 	&.string,
@@ -206,29 +202,13 @@ atom-text-editor .search-results .marker.current-result .region,
 	color: @tag;
   }
 */
-  &.other.attribute-name {
-	color: @orange;
+  &.attribute-name {
+	color: @attribute-name;
 
 	&.id {
 	  color: @blue;
 	}
   }
-}
-
-
-
-
-
-//
-// MYKE PURE
-//
-
-// nice and vague, e.g. html tag and < >
-.tag {
-	color: @tag;
-	&.punctuation {
-		color: @tag-punctuation;
-	}
 }
 
 .meta {
@@ -312,6 +292,18 @@ atom-text-editor[mini] .scroll-view,
 
 
 
+
+//
+// MYKE PURE
+//
+
+// nice and vague, e.g. html tag and < >
+.tag {
+	color: @tag;
+	&.punctuation {
+		color: @tag-punctuation;
+	}
+}
 
 .text {
 	color: @text;
