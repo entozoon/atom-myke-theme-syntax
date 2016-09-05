@@ -165,10 +165,6 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .support {
-  &.class {
-	color: @light-orange;
-  }
-
   &.function  {
 	color: @function;
 
@@ -183,8 +179,7 @@ atom-text-editor .search-results .marker.current-result .region,
 	color: @entity-name-function;
   }
   &.name.type {
-	color: @light-orange;
-	text-decoration: underline;
+	color: @class;
   }
 
   &.other.inherited-class {
@@ -335,4 +330,8 @@ atom-text-editor[mini] .scroll-view,
 	&.other.symbol {
 		//color: red;
 	}
+}
+
+.class {
+	color: @class;
 }
