@@ -8,12 +8,11 @@ atom-text-editor, :host {
 		background-color: @syntax-wrap-guide-color;
 	}
 
+	// Screw the indent guide,
+	// Just enable the invisible characters, way more usefuller
 	.indent-guide {
-		color: @syntax-indent-guide-color;
-	}
-
-	.invisible-character {
-		color: @syntax-invisible-character-color;
+		//color: @syntax-indent-guide-color;
+		box-shadow: none;
 	}
 
 	.gutter {
@@ -290,6 +289,20 @@ atom-text-editor[mini] .scroll-view,
 //
 // MYKE PURE
 //
+
+
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+	background-color: black;
+	line-height: 1.2;
+}
+
+// Show whitespace characters.. a little
+atom-text-editor::shadow .invisible-character {
+	color: white;
+	opacity: 0.13;
+}
 
 // nice and vague, e.g. html tag and < >
 .tag {
