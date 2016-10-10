@@ -348,3 +348,10 @@ atom-text-editor::shadow .invisible-character {
 .class {
 	color: @class;
 }
+
+// Put highlights above colour previews (e.g. double click highlight)
+:host .highlights .highlight-selected .region,
+atom-text-editor .highlights .highlight-selected .region,
+atom-text-editor::shadow .highlights .highlight-selected .region {
+	z-index: 99;
+}
